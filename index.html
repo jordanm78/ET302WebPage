@@ -1,122 +1,143 @@
-<!--  Navbar attempt  -->
-<!--
-<div class="container">
-<nav class="navbar navbar-inner">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">ET</a>
-    </div>
-  </div>
-</nav>
-</div>
--->
 
-<!--  This is the header bar! -->
-<div class="header-bar row-fluid">
-  <div class = "grid-row middle-xs">  <!--  Center vertical alignment   -->
-    <div class="span9">
-      <h2>Electronics Technology</h2>
-    </div>
-    <div class="span3 align-right">
-      
-      <!-- Links, which could be used in place of a dropdown -->
-      <!-- 
-      <a class="Button Button--link" href="/courses/22414/announcements">Announcements</a>
-      <a class="Button Button--link" href="/courses/22414/modules">Modules</a>
-      <a class="Button Button--link" href="/courses/22414/assignments">Assignments</a>
-      <a class="Button Button--link" href="/courses/22414/quizzes">Quizzes</a>
-      <a class="Button Button--link" href="/courses/22414/grades">Grades</a>
-      <a class="Button Button--link" href="/courses/22414/users">People</a>
-      <a class="Button Button--link" href="/courses/22414/external_tools/10">Attendance</a>
-      <a class="Button Button--link" href="/courses/22414/syllabus">Syllabus</a>
-      -->
-      
-	
-      <!-- Begin dropdown markup -->
-      
-      <div class="al-dropdown__container" style="position: relative;">
-        <a class="al-trigger btn" role="button" style = "font-size: 1.5rem" href="#"><i class="icon-hamburger" style = "font-size: 1.5rem"></i></a>
-        <ul id="toolbar-1" class="al-options" role="menu" tabindex="0" aria-hidden="true" aria-expanded="false" aria-activedescendant="toolbar-2">
-          <li role="presentation">
-            <!--<a href="#" class="icon-edit" id="toolbar-2" tabindex="-1" role="menuitem">Edit</a> -->
-            <a href="/courses/22414/announcements" id="toolbar-2" tabindex="-1" role="menuitem">Announcements</a>
-          </li>
-          <li role="presentation">
-            <a href="/courses/22414/modules" id="toolbar-3" tabindex="-1" role="menuitem">Modules</a>
-          </li>
-          <li role="presentation">
-            <a href="/courses/22414/assignments" id="toolbar-4" tabindex="-1" role="menuitem">Assignments</a>
-          </li>
-          <li role="presentation">
-            <a href="/courses/22414/quizzes" id="toolbar-5" tabindex="-1" role="menuitem">Quizzes</a>
-          </li>
-          <li role="presentation">
-            <a href="/courses/22414/grades" id="toolbar-6" tabindex="-1" role="menuitem">Grades</a>
-          </li>
-          <li role="presentation">
-            <a href="/courses/22414/users" id="toolbar-7" tabindex="-1" role="menuitem">People</a>
-          </li>
-          <li role="presentation">
-            <a href="/courses/22414/external_tools/10" id="toolbar-8" tabindex="-1" role="menuitem">Attendance</a>
-          </li>
-          <li role="presentation">
-            <a href="/courses/22414/syllabus" id="toolbar-9" tabindex="-1" role="menuitem">Syllabus</a>
-          </li>
-        </ul>
-      </div>
-      
-      <!-- End dropdown markup -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     
-    </div> <!--  Span  -->
-  </div>  <!--  Grid Row  -->
-</div>  <!--  Header Bar  -->
-
-
-<!--  Jumbotron attempt  -->
-<!--
-<div class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-</div>
--->
-
-
-<!--  This is the introductory image  -->
-<div style="position: relative; width: 100%;"><img style="width: 100%;" src="https://lrccd.instructure.com/courses/22414/files/1064855/preview" alt="Photo of Circuit Board" data-api-endpoint="https://lrccd.instructure.com/api/v1/courses/22414/files/1064855" data-api-returntype="File" />
-<h1 style="position: absolute; top: 25px; left: 0; width: 100%;"><span style="color: white; font: bold 1em Helvetica, Sans-Serif; padding: 10px;">Welcome to ET 302, Principles of Electricity and Electronics!</span></h1>
-</div>
-
-
-<!--  Space between "Introduction" and "meet your professor".  -->
-<p>&nbsp;</p>
-
-
-<!--  This is the "meet your professor" part.  -->
-<div class="content-box" style = "background-color: $ic-bg-light-success">
-  <div class="grid-row center-sm start-md">
-    <div class="col-sm-8 col-md-3 col-lg-2">
-      <p><img style="width: 100%; vertical-align: top;" src="https://lrccd.instructure.com/courses/22414/files/1064748/preview" alt="Jordan meyer's portrait" data-api-endpoint="https://lrccd.instructure.com/api/v1/courses/22414/files/1064748" data-api-returntype="File" /></p>
-    </div>
+    <title>ET 302 Home Page</title>
+    
+    
+    <!--  This line sets the base url and ensures that all links open in the parent page, not in the iframe  -->
+    <base href = "https://lrccd.instructure.com/courses/37828/" target="_parent">
+    
+    
+    <!--  This tag sets the width of the page equal to the screen size  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--  CSS  -->
+    <style>
+    
+    /*  This style makes the description terms and the description defninitions on the same line */
+	/*  This is important for the "Meet your professor" section, that includes name and contact information as part of a dictionary list (dl), */
+	/*  A Dictionary List (DL) includes Dictionary Terms (dt) and Dictionary Defnitions (dd) */
+    dt {
+      float: left;
+      padding-right: 1em;
+    }
 	
-	<!--  My contact information  -->
-	<div class="col-sm-9 col-md-9 col-lg-10">	  
-      <div class = "grid-row middle-xs">  <!--  Center vertical alignment   -->
-        <dl class="dl-horizontal" style = "padding-left: 0px">  <!--  This is a horizontal definition list.  -->
-          <dt>Your Professor: </dt>
-          <dd>Jordan Meyer</dd>
-          <dt>E-mail: </dt>
-          <dd><a href="mailto:meyerj2@arc.losrios.edu">meyerj2@arc.losrios.edu</a></dd>
-          <dt>Phone: </dt>
-          <dd>916 484 8473</dd>
-        </dl>
+	
+	/*  This overrides the padding settings from bootstrap, so that my elements can stretch as wide as possible  */
+	div.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    }
+    
+    </style>  
+  
+  
+    <!--  Links to include Bootstrap and JavaScript.  See http://getbootstrap.com/docs/4.0/getting-started/download/  -->
+    <!--  Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+    <!--  JQuery  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <!--  Popper.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    
+    <!--  JavaScript  -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"> </script>
+
+    
+  </head>
+
+  <body>
+
+
+  
+    <!--  Navbar  -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">ET 302</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="modules">Modules</a></li>
+            <li><a href="assignments">Assignments</a></li>
+            <li><a href="quizzes">Quizzes</a></li>
+            <li><a href="grades">Grades</a></li>
+            <li><a href="users">People</a></li>
+            <li><a href="external_tools/10">Attendance</a></li>
+            <li><a href="pages/syllabus-communication-policy-and-accomodation-statement">Syllabus</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    
+
+
+
+
+    <!--  This is the introductory image  -->
+    <!--
+    <div style="position: relative; width: 100%;"><img style="width: 100%;" src="https://lrccd.instructure.com/courses/22414/files/1064855/preview" alt="Photo of Circuit Board" data-api-endpoint="https://lrccd.instructure.com/api/v1/courses/22414/files/1064855" data-api-returntype="File" />
+    <h1 style="position: absolute; top: 25px; left: 0; width: 100%;"><span style="color: white; font: bold 1em Helvetica, Sans-Serif; padding: 10px;">Welcome to ET 302, Principles of Electricity and Electronics!</span></h1>
+    </div>
+    -->
+
+    
+
+
+    <!--  This is the "meet your professor" part.  -->
+    <div class = "container" style = "margin-top:80px; margin-left: 0">
+      <div class="row center-xs start-sm">
+	  
+	    <!--  Heading  -->
+		<h2 style = "margin-left:15px">Contact Your Professor, Jordan Meyer!</h2>
+      
+        <!--  Headshot  -->
+        <div class="col-xs-12 col-sm-3 col-md-2">
+          <p><img style="width: 100%; max-width: 200px; vertical-align: top;" src="https://lrccd.instructure.com/courses/22414/files/1064748/preview" alt="Jordan Meyer's Headshot" /></p>
+        </div>
+      
+        <!--  My contact information  -->
+        <div class="col-xs-12 col-sm-9 col-md-10">	  
+          <div class = "center-block">  <!--  Center vertical alignment   -->
+            <dl class="dl-horizontal" style = "padding-left: 0px; padding-top: 20px; margin-bottom: 0;">  <!--  This is a horizontal definition list.  -->
+              <dt>E-mail: </dt>
+              <dd><a href="mailto:meyerj2@arc.losrios.edu">meyerj2@arc.losrios.edu</a></dd>
+              <dt>Phone: </dt>
+              <dd>916 484 8473</dd>
+            </dl>
+          </div>
+        </div>
+        
       </div>
     </div>
-  </div>
-</div>
 
 
+    <!--  Youtube Playlist   -->
+	<div class = "container" style = "margin-top:40px; margin-left: 0; margin-bottom:40px">
+	  <p><h2>Watch Lectures on YouTube</h2></p>
+      <div style="position:relative;height:0;padding-bottom:56.25%">
+	    <iframe src="https://www.youtube.com/embed/videoseries?list=PLndRklKb-Xmfsa7E3YKhUYwi0x91alrPH&amp;ecver=2" width="100%" height="480px" frameborder="0" allow="autoplay; encrypted-media" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+	  </div>
+    </div>
+	
+	
 
+    <!--  Student Help Calendar  -->
+    <p><iframe style="border-width: 0;" src="https://calendar.google.com/calendar/embed?title=Student%20Help%20Calendar&amp;showDate=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=apps.losrios.edu_8udaugbr24s00lknv15vlv984s%40group.calendar.google.com&amp;color=%23B1440E&amp;src=apps.losrios.edu_46rt0oa32nr3o9vp5qjibk5n70%40group.calendar.google.com&amp;color=%23AB8B00&amp;src=apps.losrios.edu_f4avdlemaocbpe2efl854tmp5o%40group.calendar.google.com&amp;color=%231B887A&amp;src=apps.losrios.edu_d24s0c5buei892cbpi9m6tnm00%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" width="100%" height="480px"></iframe></p>
 
-<!--  Student Help Calendar  -->
-<p><iframe style="border-width: 0;" src="https://calendar.google.com/calendar/embed?title=Student%20Help%20Calendar&amp;showDate=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=apps.losrios.edu_8udaugbr24s00lknv15vlv984s%40group.calendar.google.com&amp;color=%23B1440E&amp;src=apps.losrios.edu_46rt0oa32nr3o9vp5qjibk5n70%40group.calendar.google.com&amp;color=%23AB8B00&amp;src=apps.losrios.edu_f4avdlemaocbpe2efl854tmp5o%40group.calendar.google.com&amp;color=%231B887A&amp;src=apps.losrios.edu_d24s0c5buei892cbpi9m6tnm00%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" width="800" height="600"></iframe></p>
+  
+  </body>
+</html>
